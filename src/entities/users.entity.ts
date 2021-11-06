@@ -8,6 +8,6 @@ export class Users{
   @Column({unique: true})
   username: string;
 
-  @Column()
+  @Column({select: false})
   password: string;
 }

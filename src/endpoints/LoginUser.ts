@@ -1,8 +1,10 @@
 import { IsNotEmpty } from 'class-validator';
 
-export class CreateUser {
 
-  name: string;
+export class LoginUser {
+  username: string;
+
   @IsNotEmpty()
   password: string;
+
 }
